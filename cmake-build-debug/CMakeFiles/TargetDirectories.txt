@@ -1,0 +1,5 @@
+/media/danial/U/Project/Painty/cmake-build-debug/CMakeFiles/Painty.dir
+/media/danial/U/Project/Painty/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/danial/U/Project/Painty/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/danial/U/Project/Painty/cmake-build-debug/CMakeFiles/Painty_autogen_timestamp_deps.dir
+/media/danial/U/Project/Painty/cmake-build-debug/CMakeFiles/Painty_autogen.dir
