@@ -34,3 +34,6 @@ Overall, this painting program demonstrates the capabilities of Qt for creating 
 
 # Authors
 * [daninouai](https://github.com/daninouai)
+
+# Preview
+![Screenshot_20230418_0033438](https://raw.githubusercontent.com/daninouai/Painty/master/Painty.gif)
