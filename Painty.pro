@@ -22,6 +22,7 @@ HEADERS += \
     pixel.h \
     toolCircle.h \
     toolLine.h \
+    toolSelection.h \
     toolSquare.h \
     toolText.h \
     tools.h

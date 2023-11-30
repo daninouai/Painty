@@ -299,6 +299,23 @@
       <normaloff>icons/ui/spray-can.svg</normaloff>icons/ui/spray-can.svg</iconset>
     </property>
    </widget>
+   <widget class="QPushButton" name="toolSelection">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icons/ui/square-dashed.svg</normaloff>icons/ui/square-dashed.svg</iconset>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -306,7 +323,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>30</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -316,6 +333,8 @@
     <addaction name="actionNew"/>
     <addaction name="separator"/>
     <addaction name="actionSave_as_Image"/>
+    <addaction name="actionExport_as_Json"/>
+    <addaction name="actionImport"/>
     <addaction name="separator"/>
     <addaction name="actionQuit"/>
    </widget>
@@ -366,6 +385,27 @@
    </property>
    <property name="text">
     <string>About Painty</string>
+   </property>
+  </action>
+  <action name="actionExport_as_Json">
+   <property name="icon">
+    <iconset theme="application-exit">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Export...</string>
+   </property>
+   <property name="toolTip">
+    <string>Export as Json</string>
+   </property>
+  </action>
+  <action name="actionImport">
+   <property name="icon">
+    <iconset theme="document-open">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Import...</string>
    </property>
   </action>
  </widget>

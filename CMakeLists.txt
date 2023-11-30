@@ -21,6 +21,7 @@ add_executable(Painty
 #        toolSquare.cpp
 #        tools.cpp
         mainwindow.ui
+        toolSelection.h
 )
 
 target_link_libraries(Painty

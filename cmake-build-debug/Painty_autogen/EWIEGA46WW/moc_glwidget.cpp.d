@@ -1,5 +1,6 @@
-/media/danial/U/Project/Painty/cmake-build-debug/Painty_autogen/EWIEGA46WW/moc_glwidget.cpp: /media/danial/U/Project/Painty/glwidget.h \
-  /media/danial/U/Project/Painty/cmake-build-debug/Painty_autogen/moc_predefs.h \
+/home/danial/Desktop/GITHUB/update/Painty/cmake-build-debug/Painty_autogen/EWIEGA46WW/moc_glwidget.cpp: /home/danial/Desktop/GITHUB/update/Painty/glwidget.h \
+  /home/danial/Desktop/GITHUB/update/Painty/cmake-build-debug/Painty_autogen/moc_predefs.h \
+  /home/danial/Desktop/GITHUB/update/Painty/tools.h \
   /usr/include/GL/gl.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -95,6 +96,7 @@
   /usr/include/c++/13.2.1/bits/hash_bytes.h \
   /usr/include/c++/13.2.1/bits/invoke.h \
   /usr/include/c++/13.2.1/bits/ios_base.h \
+  /usr/include/c++/13.2.1/bits/istream.tcc \
   /usr/include/c++/13.2.1/bits/iterator_concepts.h \
   /usr/include/c++/13.2.1/bits/list.tcc \
   /usr/include/c++/13.2.1/bits/locale_classes.h \
@@ -187,6 +189,8 @@
   /usr/include/c++/13.2.1/initializer_list \
   /usr/include/c++/13.2.1/ios \
   /usr/include/c++/13.2.1/iosfwd \
+  /usr/include/c++/13.2.1/iostream \
+  /usr/include/c++/13.2.1/istream \
   /usr/include/c++/13.2.1/iterator \
   /usr/include/c++/13.2.1/limits \
   /usr/include/c++/13.2.1/list \

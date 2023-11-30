@@ -1,4 +1,4 @@
-# Install script for directory: /media/danial/U/Project/Painty
+# Install script for directory: /home/danial/Desktop/GITHUB/update/Painty
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/media/danial/U/Project/Painty/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/danial/Desktop/GITHUB/update/Painty/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -32,13 +32,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 26,
+				"line" : 27,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 37,
+				"line" : 38,
 				"parent" : 0
 			}
 		]
@@ -83,11 +83,11 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "/media/danial/U/Project/Painty/cmake-build-debug/Painty_autogen/include"
+					"path" : "/home/danial/Desktop/GITHUB/update/Painty/cmake-build-debug/Painty_autogen/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/media/danial/U/Project/Painty/."
+					"path" : "/home/danial/Desktop/GITHUB/update/Painty/."
 				},
 				{
 					"backtrace" : 2,
@@ -134,11 +134,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "Painty_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "Painty_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "Painty_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "Painty::@6890427a1f51a3e7e1df",
@@ -212,21 +212,22 @@
 			"sourceIndexes" : 
 			[
 				5,
-				7
+				8
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				6
+				6,
+				7
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				8
+				9
 			]
 		}
 	],
@@ -267,6 +268,11 @@
 			"backtrace" : 1,
 			"path" : "mainwindow.ui",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "toolSelection.h",
+			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,

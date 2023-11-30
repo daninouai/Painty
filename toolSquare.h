@@ -5,6 +5,7 @@
 #include <GL/glut.h>
 #include <iostream>
 
+
 toolSquare::toolSquare(float p1, float p2, float p3, float p4, float r, float g, float b) {
     newP1 = p1;
     newP2 = p2;
@@ -53,6 +54,7 @@ void toolSquare::setColor(float r, float g, float b) {
 }
 
 void toolSquare::createSquare(Point point1, Point point2) {
+
     double centerX = (point1.x + point2.x) / 2.0;
     double centerY = (point1.y + point2.y) / 2.0;
     double width = abs(point2.x - point1.x);
@@ -65,5 +67,6 @@ void toolSquare::createSquare(Point point1, Point point2) {
     glVertex3f(centerX - width / 2.0, centerY + height / 2.0, 0.0);
     glEnd();
 }
+
 
 #endif // TOOLSQUARE_H

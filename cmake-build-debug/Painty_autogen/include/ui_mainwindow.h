@@ -34,6 +34,8 @@ public:
     QAction *actionSave_as_Image;
     QAction *actionQuit;
     QAction *actionAbout_Me;
+    QAction *actionExport_as_Json;
+    QAction *actionImport;
     QWidget *centralwidget;
     QTreeView *tools;
     QPushButton *toolCircle;
@@ -53,6 +55,7 @@ public:
     QPushButton *toolEraser;
     QPushButton *toolText;
     QPushButton *toolSpray;
+    QPushButton *toolSelection;
     QMenuBar *menubar;
     QMenu *menuFile;
     QMenu *menuHelp;
@@ -107,6 +110,26 @@ public:
             icon4.addFile(QString::fromUtf8("."), QSize(), QIcon::Normal, QIcon::Off);
         }
         actionAbout_Me->setIcon(icon4);
+        actionExport_as_Json = new QAction(MainWindow);
+        actionExport_as_Json->setObjectName(QString::fromUtf8("actionExport_as_Json"));
+        QIcon icon5;
+        iconThemeName = QString::fromUtf8("application-exit");
+        if (QIcon::hasThemeIcon(iconThemeName)) {
+            icon5 = QIcon::fromTheme(iconThemeName);
+        } else {
+            icon5.addFile(QString::fromUtf8("."), QSize(), QIcon::Normal, QIcon::Off);
+        }
+        actionExport_as_Json->setIcon(icon5);
+        actionImport = new QAction(MainWindow);
+        actionImport->setObjectName(QString::fromUtf8("actionImport"));
+        QIcon icon6;
+        iconThemeName = QString::fromUtf8("document-open");
+        if (QIcon::hasThemeIcon(iconThemeName)) {
+            icon6 = QIcon::fromTheme(iconThemeName);
+        } else {
+            icon6.addFile(QString::fromUtf8("."), QSize(), QIcon::Normal, QIcon::Off);
+        }
+        actionImport->setIcon(icon6);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         tools = new QTreeView(centralwidget);
@@ -115,9 +138,9 @@ public:
         toolCircle = new QPushButton(centralwidget);
         toolCircle->setObjectName(QString::fromUtf8("toolCircle"));
         toolCircle->setGeometry(QRect(50, 10, 31, 31));
-        QIcon icon5;
-        icon5.addFile(QString::fromUtf8("icons/ui/circle.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        toolCircle->setIcon(icon5);
+        QIcon icon7;
+        icon7.addFile(QString::fromUtf8("icons/ui/circle.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        toolCircle->setIcon(icon7);
         widget = new GLWidget(centralwidget);
         widget->setObjectName(QString::fromUtf8("widget"));
         widget->setGeometry(QRect(90, 0, 711, 551));
@@ -125,21 +148,21 @@ public:
         pushButton_7 = new QPushButton(centralwidget);
         pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
         pushButton_7->setGeometry(QRect(10, 50, 31, 31));
-        QIcon icon6;
-        icon6.addFile(QString::fromUtf8("icons/ui/pen-fancy.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_7->setIcon(icon6);
+        QIcon icon8;
+        icon8.addFile(QString::fromUtf8("icons/ui/pen-fancy.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_7->setIcon(icon8);
         toolPen = new QPushButton(centralwidget);
         toolPen->setObjectName(QString::fromUtf8("toolPen"));
         toolPen->setGeometry(QRect(10, 10, 31, 31));
-        QIcon icon7;
-        icon7.addFile(QString::fromUtf8("icons/ui/pen.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        toolPen->setIcon(icon7);
+        QIcon icon9;
+        icon9.addFile(QString::fromUtf8("icons/ui/pen.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        toolPen->setIcon(icon9);
         toolSquare = new QPushButton(centralwidget);
         toolSquare->setObjectName(QString::fromUtf8("toolSquare"));
         toolSquare->setGeometry(QRect(50, 50, 31, 31));
-        QIcon icon8;
-        icon8.addFile(QString::fromUtf8("icons/ui/square.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        toolSquare->setIcon(icon8);
+        QIcon icon10;
+        icon10.addFile(QString::fromUtf8("icons/ui/square.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        toolSquare->setIcon(icon10);
         colorBlue = new QPushButton(centralwidget);
         colorBlue->setObjectName(QString::fromUtf8("colorBlue"));
         colorBlue->setGeometry(QRect(10, 510, 31, 31));
@@ -174,31 +197,37 @@ public:
         toolLine = new QPushButton(centralwidget);
         toolLine->setObjectName(QString::fromUtf8("toolLine"));
         toolLine->setGeometry(QRect(50, 90, 31, 31));
-        QIcon icon9;
-        icon9.addFile(QString::fromUtf8("icons/ui/slash-forward.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        toolLine->setIcon(icon9);
+        QIcon icon11;
+        icon11.addFile(QString::fromUtf8("icons/ui/slash-forward.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        toolLine->setIcon(icon11);
         toolEraser = new QPushButton(centralwidget);
         toolEraser->setObjectName(QString::fromUtf8("toolEraser"));
         toolEraser->setGeometry(QRect(10, 130, 31, 31));
-        QIcon icon10;
-        icon10.addFile(QString::fromUtf8("icons/ui/eraser.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        toolEraser->setIcon(icon10);
+        QIcon icon12;
+        icon12.addFile(QString::fromUtf8("icons/ui/eraser.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        toolEraser->setIcon(icon12);
         toolText = new QPushButton(centralwidget);
         toolText->setObjectName(QString::fromUtf8("toolText"));
         toolText->setGeometry(QRect(50, 130, 31, 31));
-        QIcon icon11;
-        icon11.addFile(QString::fromUtf8("icons/ui/text.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        toolText->setIcon(icon11);
+        QIcon icon13;
+        icon13.addFile(QString::fromUtf8("icons/ui/text.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        toolText->setIcon(icon13);
         toolSpray = new QPushButton(centralwidget);
         toolSpray->setObjectName(QString::fromUtf8("toolSpray"));
         toolSpray->setGeometry(QRect(10, 90, 31, 31));
-        QIcon icon12;
-        icon12.addFile(QString::fromUtf8("icons/ui/spray-can.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        toolSpray->setIcon(icon12);
+        QIcon icon14;
+        icon14.addFile(QString::fromUtf8("icons/ui/spray-can.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        toolSpray->setIcon(icon14);
+        toolSelection = new QPushButton(centralwidget);
+        toolSelection->setObjectName(QString::fromUtf8("toolSelection"));
+        toolSelection->setGeometry(QRect(10, 170, 31, 31));
+        QIcon icon15;
+        icon15.addFile(QString::fromUtf8("icons/ui/square-dashed.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        toolSelection->setIcon(icon15);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 30));
+        menubar->setGeometry(QRect(0, 0, 800, 22));
         menuFile = new QMenu(menubar);
         menuFile->setObjectName(QString::fromUtf8("menuFile"));
         menuHelp = new QMenu(menubar);
@@ -213,6 +242,8 @@ public:
         menuFile->addAction(actionNew);
         menuFile->addSeparator();
         menuFile->addAction(actionSave_as_Image);
+        menuFile->addAction(actionExport_as_Json);
+        menuFile->addAction(actionImport);
         menuFile->addSeparator();
         menuFile->addAction(actionQuit);
         menuHelp->addAction(actionAbout_Me);
@@ -229,6 +260,11 @@ public:
         actionSave_as_Image->setText(QCoreApplication::translate("MainWindow", "Save as Image", nullptr));
         actionQuit->setText(QCoreApplication::translate("MainWindow", "Quit", nullptr));
         actionAbout_Me->setText(QCoreApplication::translate("MainWindow", "About Painty", nullptr));
+        actionExport_as_Json->setText(QCoreApplication::translate("MainWindow", "Export...", nullptr));
+#if QT_CONFIG(tooltip)
+        actionExport_as_Json->setToolTip(QCoreApplication::translate("MainWindow", "Export as Json", nullptr));
+#endif // QT_CONFIG(tooltip)
+        actionImport->setText(QCoreApplication::translate("MainWindow", "Import...", nullptr));
         toolCircle->setText(QString());
         pushButton_7->setText(QString());
         toolPen->setText(QString());
@@ -244,6 +280,7 @@ public:
         toolEraser->setText(QString());
         toolText->setText(QString());
         toolSpray->setText(QString());
+        toolSelection->setText(QString());
         menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
         menuHelp->setTitle(QCoreApplication::translate("MainWindow", "Help", nullptr));
     } // retranslateUi

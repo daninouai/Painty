@@ -1,8 +1,12 @@
 #include "pixel.h"
 
-Pixel::Pixel() {}
+Pixel::Pixel()
+{
 
-Pixel::Pixel(int x, int y, float r, float g, float b) {
+}
+
+Pixel::Pixel(int x, int y, float r, float g, float b)
+{
     newX = x;
     newY = y;
     newR = r;
@@ -10,34 +14,34 @@ Pixel::Pixel(int x, int y, float r, float g, float b) {
     newB = b;
 }
 
+
 Pixel::~Pixel() {}
 
-int Pixel::getX() {
+int Pixel::getX(){
     return newX;
 }
 
-int Pixel::getY() {
+int Pixel::getY(){
     return newY;
 }
 
-float Pixel::getR() {
+float Pixel::getR(){
     return newR;
 }
 
-float Pixel::getG() {
+float Pixel::getG(){
     return newG;
 }
 
-float Pixel::getB() {
+float Pixel::getB(){
     return newB;
 }
 
-void Pixel::setPosition(int x, int y) {
+void Pixel::setPosition(int x, int y){
     newX = x;
     newY = y;
 }
-
-void Pixel::setColor(float r, float g, float b) {
+void Pixel::setColor(float r, float g, float b){
     newR = r;
     newG = g;
     newB = b;

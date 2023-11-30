@@ -43,7 +43,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Painty::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Painty-Release-4bf29ca28f5b36e7d8a3.json",
+					"jsonFile" : "target-Painty-Release-d2fd1113da70701a7d05.json",
 					"name" : "Painty",
 					"projectIndex" : 0
 				},
@@ -67,8 +67,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/media/danial/U/Project/Painty/cmake-build-debug",
-		"source" : "/media/danial/U/Project/Painty"
+		"build" : "/home/danial/Desktop/GITHUB/update/Painty/cmake-build-debug",
+		"source" : "/home/danial/Desktop/GITHUB/update/Painty"
 	},
 	"version" : 
 	{

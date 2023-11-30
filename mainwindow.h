@@ -7,16 +7,15 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow {
-Q_OBJECT
+class MainWindow : public QMainWindow
+{
+    Q_OBJECT
 
 public:
     MainWindow(QWidget *parent = nullptr);
-
     ~MainWindow();
 
 private slots:
-
     void on_actionQuit_triggered();
 
     void on_actionAbout_Me_triggered();
@@ -53,8 +52,13 @@ private slots:
 
     void on_actionSave_as_Image_triggered();
 
+    void on_toolSelection_clicked();
+
+    void on_actionExport_as_Json_triggered();
+
+    void on_actionImport_triggered();
+
 private:
     Ui::MainWindow *ui;
 };
-
 #endif // MAINWINDOW_H

@@ -61,4 +61,5 @@ void toolText::createText(float posX, float posY, const std::string &txt) {
     writeBitmapString((void *) font, txt);
 }
 
+
 #endif // TOOLTEXT_H

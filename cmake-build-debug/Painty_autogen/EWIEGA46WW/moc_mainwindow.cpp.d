@@ -1,5 +1,5 @@
-/media/danial/U/Project/Painty/cmake-build-debug/Painty_autogen/EWIEGA46WW/moc_mainwindow.cpp: /media/danial/U/Project/Painty/mainwindow.h \
-  /media/danial/U/Project/Painty/cmake-build-debug/Painty_autogen/moc_predefs.h \
+/home/danial/Desktop/GITHUB/update/Painty/cmake-build-debug/Painty_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/danial/Desktop/GITHUB/update/Painty/mainwindow.h \
+  /home/danial/Desktop/GITHUB/update/Painty/cmake-build-debug/Painty_autogen/moc_predefs.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm/errno.h \

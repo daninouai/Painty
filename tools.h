@@ -1,8 +1,8 @@
 #ifndef TOOLS_H
 #define TOOLS_H
-
 #include <string.h>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -11,7 +11,8 @@ struct Point {
     double y;
 };
 
-struct Result {
+struct Result
+{
     double distance;
     Point center;
 };
@@ -19,29 +20,17 @@ struct Result {
 class toolCircle {
 public:
     toolCircle();
-
     toolCircle(float x1, float y1, float x2, float y2, float r, float g, float b);
-
     ~toolCircle();
-
     int getX1();
-
     int getY1();
-
     int getX2();
-
     int getY2();
-
-    Result calculateCircle(const Point &point1, const Point &point2);
-
+    Result calculateCircle(const Point& point1, const Point& point2);
     void creatCircle(float x, float y, float r);
-
     float getR();
-
     float getG();
-
     float getB();
-
     void setColor(float, float, float);
 
 private:
@@ -58,27 +47,16 @@ private:
 class toolSquare {
 public:
     toolSquare();
-
     toolSquare(float p1, float p2, float p3, float p4, float r, float g, float b);
-
     ~toolSquare();
-
     float getP1();
-
     float getP2();
-
     float getP3();
-
     float getP4();
-
     float getR();
-
     float getG();
-
     float getB();
-
     void setColor(float, float, float);
-
     void createSquare(Point point1, Point point2);
 
 private:
@@ -95,25 +73,16 @@ private:
 class toolLine {
 public:
     toolLine();
-
     toolLine(float x1, float y1, float x2, float y2, float r, float g, float b);
-
+//    ~toolLine();
     float getX1();
-
     float getY1();
-
     float getX2();
-
     float getY2();
-
     void createLine(float x1, float y1, float x2, float y2);
-
     float getR();
-
     float getG();
-
     float getB();
-
     void setColor(float, float, float);
 
 private:
@@ -130,25 +99,18 @@ private:
 class toolText {
 public:
     toolText();
-
     toolText(float x, float y, float r, float g, float b, string txt);
-
     ~toolText();
 
-    void writeBitmapString(void *font, const std::string &str);
-
-    void createText(float posX, float posY, const std::string &txt);
+    void writeBitmapString(void *font, const std::string& str);
+    void createText(float posX, float posY, const std::string& txt);
 
     float getX();
-
     float getY();
 
     float getR();
-
     float getG();
-
     float getB();
-
     void setColor(float, float, float);
 
     string getText();
@@ -162,6 +124,21 @@ private:
     float newR;
     float newG;
     float newB;
+};
+
+class toolSelection {
+public:
+    toolSelection();
+    toolSelection(float x, float y);
+
+    void getSelectionPosition(vector<toolSelection>& pSelect);
+
+    float getX();
+    float getY();
+
+private:
+    float newX;
+    float newY;
 };
 
 #endif // TOOLS_H

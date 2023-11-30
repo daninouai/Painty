@@ -9,7 +9,8 @@
 
 using namespace std;
 
-toolCircle::toolCircle(float x1, float y1, float x2, float y2, float r, float g, float b) {
+toolCircle::toolCircle(float x1, float y1, float x2, float y2, float r, float g, float b)
+{
     newX1 = x1;
     newY1 = y1;
     newX2 = x2;
@@ -23,44 +24,45 @@ toolCircle::toolCircle(float x1, float y1, float x2, float y2, float r, float g,
 
 toolCircle::~toolCircle() {}
 
-int toolCircle::getX1() {
+int toolCircle::getX1(){
     return newX1;
 }
 
-int toolCircle::getY1() {
+int toolCircle::getY1(){
     return newY1;
 }
 
-int toolCircle::getX2() {
+int toolCircle::getX2(){
     return newX2;
 }
 
-int toolCircle::getY2() {
+int toolCircle::getY2(){
     return newY2;
 }
 
-float toolCircle::getR() {
+float toolCircle::getR(){
     return newR;
 }
 
-float toolCircle::getG() {
+float toolCircle::getG(){
     return newG;
 }
 
-float toolCircle::getB() {
+float toolCircle::getB(){
     return newB;
 }
 
-void toolCircle::setColor(float r, float g, float b) {
+void toolCircle::setColor(float r, float g, float b){
     newR = r;
     newG = g;
     newB = b;
 }
 
-Result toolCircle::calculateCircle(const Point &point1, const Point &point2) {
+Result toolCircle::calculateCircle(const Point& point1, const Point& point2)
+{
     Result result;
 
-    result.distance = std::sqrt(std::pow(point2.x - point1.x, 2) + std::pow(point2.y - point1.y, 2));
+    result.distance = std::sqrt((point2.x - point1.x) * (point2.x - point1.x) + (point2.y - point1.y) * (point2.y - point1.y)) / 2;
 
     result.center.x = (point1.x + point2.x) / 2.0;
     result.center.y = (point1.y + point2.y) / 2.0;
@@ -69,7 +71,10 @@ Result toolCircle::calculateCircle(const Point &point1, const Point &point2) {
 }
 
 
-void toolCircle::creatCircle(float x, float y, float r) {
+void toolCircle::creatCircle(float x, float y, float r)
+{
+
+    cout << "ejra shod" << endl;
 
     double PI = 3.14159265358979324;
     float t = 0;
@@ -81,6 +86,7 @@ void toolCircle::creatCircle(float x, float y, float r) {
         t += 2 * PI / numVertices;
     }
     glEnd();
+
 }
 
 
