@@ -32,21 +32,39 @@ Overall, this painting program demonstrates the capabilities of Qt for creating 
 
 To build and run the Painty project using CMake and `make`, follow these steps:
 
-Create a Build Directory:** First, create a directory for the build files and navigate into it:
-   ```bash
+Before starting, make sure to install the nlohmann/json package compatible with your OS.
+
+Installation commands for different package managers:
+
+For Debian/Ubuntu (using apt):
+```bash
+sudo apt update
+sudo apt install nlohmann-json3-dev
+```
+For RHEL/CentOS (using yum):
+```
+sudo yum install nlohmann-json-devel
+```
+For Arch Linux (using yay):
+```
+yay -S nlohmann-json
+```
+
+
+Create a Build Directory: First, create a directory for the build files and navigate into it:
+  ```bash
   mkdir -p cmake-build-debug
   cd cmake-build-debug
   ```
 Then cmake and make
-  ```
+  ```bash
   cmake ..
   make
   ```
 Finally rut it!
-```
+```bash
 ./Painty
 ```
-   
    
 
 # Libraries
