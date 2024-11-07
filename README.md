@@ -28,6 +28,27 @@ Overall, this painting program demonstrates the capabilities of Qt for creating 
 |-----------------|-------------|
 | `File => Save as Image`       | to save in png format |
 
+## Build and Run Instructions
+
+To build and run the Painty project using CMake and `make`, follow these steps:
+
+Create a Build Directory:** First, create a directory for the build files and navigate into it:
+   ```bash
+  mkdir -p cmake-build-debug
+  cd cmake-build-debug
+  ```
+Then cmake and make
+  ```
+  cmake ..
+  make
+  ```
+Finally rut it!
+```
+./Painty
+```
+   
+   
+
 # Libraries
 * [OpenGL](https://www.opengl.org/)
 * [Qt](https://www.qt.io/)
